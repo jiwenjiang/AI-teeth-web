@@ -1,6 +1,5 @@
 import React, { lazy, Suspense, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Loading } from "react-vant";
 
 const TeethReport = lazy(() => import("./pages/teeth/report"));
 
@@ -18,9 +17,7 @@ function App() {
               width: "100vw",
               height: "100vh",
             }}
-          >
-            <Loading type="spinner" />
-          </div>
+          ></div>
         }
       >
         <Routes>

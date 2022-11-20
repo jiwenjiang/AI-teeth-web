@@ -1,4 +1,3 @@
-import { Notify } from 'react-vant';
 
 const baseUrl = `https://wx-test.fushuhealth.com/largev-teeth-wx`;
 
@@ -68,7 +67,7 @@ const request = async (params: httpType) => {
       sessionStorage.user = '';
       // window.location.href = `/?returnUrl=${encodeURIComponent(window.location.href)}`;
     }
-    Notify.show({ type: 'danger', message: data.message });
+    // Notify.show({ type: 'danger', message: data.message });
   }
   return data;
 };
